@@ -31,10 +31,10 @@ public class MatrizesTesteAcumulador {
 		Integer valorSoma = Integer.parseInt(entrada.nextLine());
 
 		for (int i = 0; i < matriz.size() - 1; i++) {
-			if ((matriz.get(i) + matriz.get(i + 1)) == valorSoma) {
-				System.out.println(matriz.get(i) + " , " + matriz.get(i + 1));
-			} else {
-				System.out.println("errooouu");
+			for (int j = i+1; j < matriz.size(); j++) {
+				if ((matriz.get(i) + matriz.get(j)) == valorSoma) {
+					System.out.println(matriz.get(i) + " , " + matriz.get(j));
+				} 
 			}
 		}
 	}
