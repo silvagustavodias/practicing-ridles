@@ -25,7 +25,7 @@ public class MatrizesTesteAcumulador {
 			System.out.println("Deseja continuar a matriz? true or false?");
 			verificador = (Boolean.parseBoolean(entrada.nextLine()));
 		}
-		System.out.println("Essa é a sua matriz " + matriz);
+		System.out.println("Esse é seu array " + matriz);
 
 		System.out.println("Digite o valor da soma a ser verificada: ");
 		Integer valorSoma = Integer.parseInt(entrada.nextLine());
